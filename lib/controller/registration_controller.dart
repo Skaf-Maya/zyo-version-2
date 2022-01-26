@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:zyo_version_1/view/home.dart';
+import 'package:zyo_version_1/view/verification_code.dart';
 
 class RegistrationController extends GetxController {
 
@@ -10,12 +11,14 @@ class RegistrationController extends GetxController {
   TextEditingController password_sign_in = TextEditingController();
   TextEditingController email_register = TextEditingController();
   TextEditingController password_register = TextEditingController();
+  TextEditingController code = TextEditingController();
   var validate_sign = false.obs;
   var validate_register = false.obs;
   var isHidden_sign = true.obs;
   var isHidden_register = true.obs;
   var isChecked_1 = false.obs;
   var isChecked_2 = false.obs;
+  var validate_verification = false.obs;
 
   visible_password_signin() {
     isHidden_sign.value = !isHidden_sign.value;
@@ -47,7 +50,18 @@ class RegistrationController extends GetxController {
     }
     else {
       validate_register.value = false;
-      Get.offAll(()=>Home());
+      Get.to(() => VerificationCode());
+    }
+  }
+
+  next_verification(BuildContext context) {
+    if(code.text.isEmpty)
+    {
+      validate_verification.value = true;
+    }
+    else {
+      validate_verification.value = false;
+      Get.off(()=>Home());
     }
   }
 

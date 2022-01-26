@@ -17,6 +17,9 @@
   "privacy_&_cookie_policy": "Privacy & Cookie Policy",
   "by_registering": "By registering, you agree to receive exclusive offers and latest news by email. if you wish to no longer receive any email, please check the unsubscribe option",
   "by_joining": "By joining, you agree to our Privacy & Cookie Policy",
+  "enter_the_code": "Enter The Code",
+  "code_is_required": "code is required",
+
 
 
   "3": "*********** Forget Password ***********",
@@ -149,5 +152,10 @@
   "facebook": "Facebook",
   "instagram": "Instagram",
   "twitter": "Twitter",
-  "currency": "Currency"
+  "currency": "Currency",
+
+
+  "12": "*********** No Internet ***********",
+  "no_internet": "No Internet Connection",
+  "reload": "Reload"
 }

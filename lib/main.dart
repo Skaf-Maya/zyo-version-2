@@ -5,6 +5,7 @@ import 'package:zyo_version_1/const/app_colors.dart';
 import 'package:zyo_version_1/const/app_localization.dart';
 import 'package:zyo_version_1/view/introduction.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:zyo_version_1/view/no_internet.dart';
 
 void main() {
   runApp(MyApp());
